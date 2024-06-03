@@ -1,0 +1,342 @@
+.Form {
+      width: 100%;
+      text-align: center;
+}
+
+.Form .NavBar {
+      position: fixed;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 100px;
+      background-color: #ffffff;
+      padding-top: 30px;
+}
+
+.Form .NavBar h2 {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19.5px;
+      letter-spacing: 0.05em;
+      text-align: left;
+}
+
+.Form .Form-fq {
+      padding-top: 100px;
+}
+
+.Form .Form-fq form {
+      display: flex;
+      justify-content: center;
+}
+
+.Form .Form-fq h2 {
+      font-family: Tajawal;
+      font-size: 28.39px;
+      font-weight: 700;
+      line-height: 24.85px;
+      color: #FF8500;
+}
+
+.Form .Form-fq p {
+      font-family: Tajawal;
+      font-size: 17.75px;
+      font-weight: 500;
+      line-height: 24.85px;
+      color: #282828;
+      margin: 10px 0 40px 0;
+      direction: rtl;
+}
+
+.Form .Form-fq form .input {
+      border: none;
+      border-bottom: 1px solid #282828;
+      margin: 10px 20px;
+      width: 189px;
+      height: 29px;
+      font-family: Tajawal;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24.85px;
+      text-align: right;
+      color: #282828;
+}
+
+.Form .Form-fq form .input::placeholder {
+      font-family: Tajawal;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24.85px;
+      text-align: right;
+      color: #BBBBBB;
+}
+
+.Form .Form-fq form .input:focus {
+      outline: none;
+      background-color: #bbbbbb23;
+}
+
+#file-upload {
+      display: none;
+}
+
+.custom-file-label {
+      display: inline-block;
+      padding: 10px 20px;
+      font-family: Tajawal;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24.85px;
+      cursor: pointer;
+      color: #282828;
+      border-radius: 10px;
+}
+
+.custom-file-label img {
+      margin-bottom: -5px;
+      margin-right: 5px;
+}
+
+.custom-file-label:hover {
+      background-color: #2828281a;
+      color: #282828;
+}
+
+.Content-if-requer {
+      width: 80vw;
+      height: 60vh;
+      border-radius: 33px;
+      box-shadow: 1px 2px 30px 0px #00000017;
+      background-color: #fff;
+      margin: 20px auto;
+}
+
+.Content-if-requer .scroling {
+      width: 90%;
+      margin: 0 auto;
+      height: 85%;
+      border-bottom: 1px solid #282828;
+      overflow-y: scroll;
+      padding: 10px;
+}
+
+.Content-if-requer .scroling::-webkit-scrollbar {
+      width: 12px;
+      /* عرض الشريط */
+      height: 12px;
+      /* ارتفاع الشريط (لشريط التمرير الأفقي) */
+}
+
+/* تخصيص مسار الشريط */
+.Content-if-requer .scroling::-webkit-scrollbar-track {
+      background: #EEEEEE;
+      /* لون الخلفية لمسار الشريط */
+      border-radius: 10px;
+      /* جعل الحواف دائرية */
+}
+
+/* تخصيص المقبض (الجزء الذي يمكنك سحبه) */
+.Content-if-requer .scroling::-webkit-scrollbar-thumb {
+      background: #FF8500;
+      /* لون المقبض */
+      border-radius: 10px;
+      cursor: grabbing;
+      /* جعل الحواف دائرية */
+}
+
+/* تخصيص المقبض عند التمرير عليه */
+.Content-if-requer .scroling::-webkit-scrollbar-thumb:hover {
+      background: #282828;
+      /* لون المقبض عند التمرير عليه */
+}
+.Content-if-requer .scroling p
+{
+      text-align: right;
+      direction: rtl;
+      margin: 25px 20px;
+}
+
+.Content-if-requer .sm-foter
+{
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0px auto;
+}
+.Content-if-requer .sm-foter button
+{
+      width: 103px;
+      height: 37px;
+      border-radius: 10px;
+      font-family: Tajawal;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      border: none;
+      background-color: #FF8500;
+      color: #fff;
+      cursor: pointer;
+}
+.Content-if-requer .sm-foter p
+{
+      margin: 0;
+      font-family: Tajawal;
+      font-size: 17.75px;
+      font-weight: 500;
+      line-height: 24.85px;
+      text-align: right;
+      color: #282828;
+      width: 82%;
+}
+/* إخفاء مربع الاختيار الفعلي */
+.checkbox-container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    /* تخصيص مربع الاختيار */
+    .checkmark {
+      position: relative;
+      height: 27px;
+      width: 27px;
+      background-color: #fff;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid #282828;
+    }
+    
+    /* عند مرور الماوس */
+    .checkbox-container:hover input ~ .checkmark {
+      background-color: #fff;
+    }
+    
+    /* عند تحديد مربع الاختيار */
+    .checkbox-container input:checked ~ .checkmark {
+      background-color: #FF8500;
+    }
+    
+    /* لتخصيص العلامة داخل مربع الاختيار */
+    .checkmark::after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    /* عرض العلامة عند تحديد مربع الاختيار */
+    .checkbox-container input:checked ~ .checkmark::after {
+      display: block;
+    }
+    
+    /* نمط العلامة */
+    .checkbox-container .checkmark::after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    @media(max-width:1150px){
+      .Content-if-requer .sm-foter p
+      {
+            font-size: 16px;
+      }
+    }
+
+
+    @media(max-width:830px){
+      .Form .NavBar {
+            top: 30px;
+            padding: 0 40px;
+      }
+      .Form .Form-fq h2 {
+            font-size: 24px;
+      }
+      
+      .Form .Form-fq .p {
+            font-size: 16px;
+            padding: 0 10px;
+      }
+      .Form .Form-fq form {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+      }
+      .Form .Form-fq form .input
+      {
+            margin: 15px 0;
+      }
+      .Form .Form-fq form .input::placeholder
+      {
+            text-align: center;
+      }
+      .custom-file-label
+      {
+            box-shadow: 3px 3px 5.2px 0px #0000001F;
+            margin: 10px 0;
+      }
+      .Content-if-requer
+      {
+            margin-bottom: 100px;
+            position: relative;
+      }
+      .Content-if-requer .scroling p
+      {
+            font-size: 14px;
+      }
+      .Content-if-requer .sm-foter p
+      {
+            font-size: 14px;
+      }
+      .Content-if-requer .sm-foter button
+      {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translate(-50%);
+      }
+
+}
+@media(max-width:670px){
+      .Content-if-requer
+      {
+            height: 65vh;     
+            width: 100vw;    
+            padding: 0 10px;   
+      }
+      .Content-if-requer .scroling
+      {
+            height: 75%;
+            margin-bottom: 20px;
+      }
+}
+
+@media(max-width:480px){
+      .Form .NavBar {
+            top: 0px;
+            padding: 15px 10px;
+            box-shadow: 0px 4px 29px 0px #0000002E;
+      }
+      .Form .NavBar img
+      {
+            width: 100px;
+      }
+      .Form .NavBar h2
+      {
+            font-size: 13px;
+      }
+      .Content-if-requer .scroling p
+      {
+            font-size: 12px;
+      }
+}

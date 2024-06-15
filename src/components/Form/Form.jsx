@@ -2,6 +2,7 @@ import './Form.css'
 import focal from './../../assets/image/Group1.png'
 import test from './../../assets/image/Vector222.png'
 import { useState } from 'react';
+import axios from 'axios';
 
 export default function Form() {
 
@@ -9,32 +10,81 @@ export default function Form() {
   const [File, setFile] = useState();
   const [name, setname] = useState();
   const [num, setnum] = useState();
+  const [data, setData] = useState(null);
+  const [IsChecked, setIsChecked] = useState(false); // حالة للتحكم في قيمة الـ checkbox
 
   const handleFileChange = (event) => {
     if (event.target.files.length > 0) {
       setFileName('تم تحميل الصورة بنجاح');
       setFile(event.target.files[0]);
+      setError('');
     }
   };
 
-  const Handel = () => {
-    let body =
-    {
-      File: File,
-      name: name,
-      num: num
-    }
-    console.log(body);
+  const [response, setResponse] = useState(null);
+  const [error, setError] = useState(null);
 
-  }
+  // const fetchData = async () => {
+  //   // setLoading(true);
+  //   try {
+  //     const response = await axios.post('', formData, {
+  //       headers: {
+  //         'Accept': 'multipart/form-data'
+  //       }
+  //     });
+  //     setData(response.data);
+  //   } catch (error) {
+  //     console.error('Error fetching data:', error);
+  //   }
+  //   // setLoading(false);
+  // };
 
   const HandelName = (event) => {
     setname(event.target.value)
+    setError('');
   }
 
   const HandelNum = (event) => {
     setnum(event.target.value)
+    setError('');
   }
+
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+    setError('');
+    console.log(IsChecked);
+  };
+
+  const handleFileUpload = async () => {
+
+    if (!name || !num || !File || !IsChecked) {
+      setError(' الرجاء ملء جميع الحقول وإرفاق الملف');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('full_name', name);
+      formData.append('id_number', num);
+      formData.append('phone', '0900000000');
+      formData.append('email', 'test@test.com');
+      formData.append('image', File);
+      formData.append('approval', 1);
+
+    const config = {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      }
+    };
+
+    await axios.post('https://test.black-analysis-solutions.com/api/contract', formData, config)
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+  };
 
   return (
     <section className='Form'>
@@ -59,6 +109,7 @@ export default function Form() {
           <input type="text" value={num} onChange={HandelNum} className='input' placeholder='الرقم الوطني / جواز السفر' />
           <input type="text" value={name} onChange={HandelName} className='input' placeholder='الاسم الكامل ( الثلاثي )' />
         </form>
+        {error && <p style={{color: 'red'}}>{error}</p>}
         <section className='Content-if-requer'>
           <div className='scroling'>
             <p>- ألتزم جميع مراحل التدريب (النظري – التفاعلي – العملي – مشروع التخرج) والذي يستمر لمدة أربعة أشهر وذلك اعتباراً من تاريخ 1/8/2024م، ويحق للطرف الأول تمديد هذه المدة لشهر واحد تبعاً للأعطال
@@ -76,11 +127,11 @@ export default function Form() {
             <p>- ألتزم دفع كافة المستحقات المالية في موعدها وكما تم الاتفاق عليه.</p>
           </div>
           <div className='sm-foter'>
-            <button onClick={Handel}>متابعة</button>
+            <button onClick={handleFileUpload}>متابعة</button>
             <p>أوافق على وثيقة الشروط والأحكام وموافقتي وكتابة اسمي الكامل يُعتبر توقيع على العقد معكم والتزامي بشروط التدريب.</p>
-            <label class="checkbox-container">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
+            <label className="checkbox-container">
+              <input type="checkbox"  checked={IsChecked} onChange={handleCheckboxChange} />
+              <span className="checkmark"></span>
             </label>
           </div>
         </section>

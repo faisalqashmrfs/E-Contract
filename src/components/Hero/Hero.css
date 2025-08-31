@@ -1,0 +1,460 @@
+.Hero {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+}
+.NavBar
+{
+      z-index: 1234567876543456787876876;
+}
+.Hero .NavBar {
+      position: fixed;
+      top: 0px;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 100px;
+      background-color: #ffffff;
+      padding-top: 30px;
+}
+.NavBar img:nth-child(1)
+{
+      width: 140px !important;
+}
+.NavBar img:nth-child(3)
+{
+      width: 110px !important;
+}
+.NavBar h2 {
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 19.5px;
+      letter-spacing: 0.05em;
+      text-align: left;
+}
+
+.Hero .Content {
+      width: 852px;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+}
+
+.Hero .Content .ph1 {
+      width: 100%;
+      height: 598px;
+      background-image: url(./../../assets/Trainer.png);
+      transition: .4s;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+}
+
+.Hero .Content .ph2 {
+      width: 100%;
+      height: 633px;
+      background-image: url(./../../assets/image/branding.png);
+      transition: .4s;
+      position: absolute;
+      background-repeat: no-repeat;
+      bottom: 115px;
+      z-index: -1;
+}
+
+.Hero .ppp {
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: space-evenly;
+      margin-top: 100px;
+}
+
+.Hero .ppp h1 {
+      font-family: Tajawal;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 43.2px;
+      letter-spacing: 0.04em;
+      text-align: right;
+      color: #FF8500;
+
+}
+
+.Hero .ppp .descrip {
+      font-family: Tajawal;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: right;
+      color: #282828;
+      width: 597px;
+      padding: 40px 0;
+
+}
+.Hero .ppp .descrip1 {
+      font-family: Tajawal;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: right;
+      color: #282828;
+      width: 597px;
+      padding: 40px 0;
+      display: none;
+}
+
+.Hero .ppp .descrip1 span {
+      font-family: Tajawal;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px;
+      text-align: right;
+      color: #282828;
+      display: block;
+}
+
+.Hero .ppp .descrip span {
+      font-family: Tajawal;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px;
+      text-align: right;
+      color: #282828;
+      display: block;
+}
+
+.Hero .ppp button {
+      font-family: Tajawal;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: left;
+      height: 48px;
+      border-radius: 12px;
+      background: #FF8500;
+      border: none;
+      padding: 5px 15px;
+      cursor: pointer;
+      z-index: 123456789876543234567898765432;
+}
+.Hero .ppp button a
+{
+      color: #FFFFFF;
+      text-decoration: none;
+}
+
+.Hero .ppp .counts {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 75%;
+      height: 98px;
+      text-align: end;
+      padding: 0 10px 0 30px;
+      margin-top: 50px;
+      box-shadow: -15px 6px 30px 0px #00000017;
+      border-radius: 16px 0px 0px 16px;
+}
+
+.Hero .ppp .counts p,
+.Hero .ppp .counts span {
+      font-family: Tajawal;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: right;
+      color: #282828;
+}
+
+@media(max-width : 1300px) {
+      .Hero .Content .ph1 {
+            width: 75%;
+            height: 358px;
+            bottom: 0;
+      }
+
+      .Hero .Content .ph2 {
+            width: 55%;
+            height: 503px;
+            bottom: 115px;
+      }
+
+      .Hero .ppp h1 {
+            font-size: 30px;
+      }
+
+      .Hero .ppp .descrip {
+            font-size: 18px;
+            width: max-content;
+            margin-bottom: 10px;
+      }
+
+      .Hero .ppp .descrip span {
+            font-size: 18px;
+      }
+
+      .Hero .ppp button {
+            font-size: 18px;
+      }
+
+      .Hero .ppp .counts p,
+      .Hero .ppp .counts span {
+            font-size: 16px;
+      }
+}
+
+@media(max-width : 1028px) {
+      .Hero .Content .ph1 {
+            width: 60%;
+            height: 268px;
+      }
+
+      .Hero .Content .ph2 {
+            background-size: cover;
+            width: 50%;
+            height: 303px;
+            bottom: 115px;
+      }
+
+      .Hero .ppp {
+            margin-bottom: 150px;
+      }
+
+      .Hero .ppp h1 {
+            font-size: 24px;
+      }
+
+      .Hero .ppp .descrip {
+            font-size: 16px;
+      }
+
+      .Hero .ppp .descrip span {
+            font-size: 16px;
+      }
+
+      .Hero .ppp button {
+            font-size: 14px;
+      }
+
+      .Hero .ppp .counts
+      {
+            width: 60%;
+      }
+
+      .Hero .ppp .counts p,
+      .Hero .ppp .counts span {
+            font-size: 14px;
+      }
+}
+@media(max-width:830px){
+      .Hero .NavBar {
+            top: 30px;
+            padding: 0 40px;
+      }
+
+      .Hero .Content .ph1 {
+            width: 410px;
+            height: 268px;
+      }
+
+      .Hero .Content .ph2 {
+            background-size: cover;
+            width: 360px;
+            height: 303px;
+      }
+
+      .Hero .ppp {
+            padding-right: 40px;
+            margin-bottom: 150px;
+      }
+
+      .Hero .ppp h1 {
+            font-size: 24px;
+      }
+
+      .Hero .ppp .descrip {
+            font-size: 16px;
+            padding: 20px 0;
+      }
+
+      .Hero .ppp .descrip span {
+            font-size: 16px;
+      }
+
+      .Hero .ppp button {
+            font-size: 14px;
+      }
+
+      .Hero .ppp .counts
+      {
+            width: 60%;
+      }
+
+      .Hero .ppp .counts p,
+      .Hero .ppp .counts span {
+            font-size: 14px;
+      }
+      .Hero .Content {
+            width: 90%;
+      }
+}
+@media(max-width:670px){
+      .Hero {
+            align-items: start;
+      }
+
+      .Hero .Content .ph1 {
+            width: 410px;
+            height: 268px;
+      }
+
+      .Hero .Content .ph2 {
+            background-size: cover;
+            width: 360px;
+            height: 303px;
+      }
+
+      .Hero .ppp {
+            padding-right: 40px;
+            margin-bottom: 150px;
+      }
+
+      .Hero .ppp h1 {
+            font-size: 20px;
+      }
+
+      .Hero .ppp .descrip {
+            font-size: 15px;
+            padding: 15px 0;
+      }
+
+      .Hero .ppp .descrip span {
+            font-size: 15px;
+      }
+
+      .Hero .ppp button {
+            padding: 0px 5px;
+            font-size: 14px;
+      }
+
+      .Hero .ppp .counts
+      {
+
+            width: 60%;
+            height: 80px;
+            margin-top: 25px;
+            box-shadow: 0px 6px 30px 0px #00000017;
+            z-index: 10;
+            background-color: #fff;
+      }
+
+      .Hero .ppp .counts p,
+      .Hero .ppp .counts span {
+            font-size: 14px;
+      }
+      .Hero .Content {
+            width: 90%;
+      }
+}
+
+@media(max-width:480px){
+      .Hero {
+            justify-content: center;
+      }
+
+      .Hero .NavBar {
+            top: 0px;
+            padding: 15px 10px;
+            box-shadow: 0px 4px 29px 0px #0000002E;
+      }
+
+      .Hero .Content
+      {
+            width: 100vw;
+      }
+
+      .Hero .Content .ph1 {
+            width: 320px;
+            height: 200px;
+      }
+
+      .Hero .Content .ph2 {
+            background-size: cover;
+            width: 320px;
+            height: 303px;
+            bottom: 0;
+      }
+
+      .Hero .ppp {
+            padding: 0 10px;
+            margin-bottom: 150px;
+            align-items: center;
+      }
+
+      .Hero .ppp h1 {
+            font-size: 18px;
+            width: max-content;
+      }
+
+      .Hero .ppp .descrip {
+            display: none;
+      }
+      .Hero .ppp .descrip1 {
+            font-size: 14px;
+            padding: 15px 0;
+            width: 100%;
+            text-align: center;
+            display: block;
+      }
+
+      .Hero .ppp .descrip1 span {
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+      }
+
+      .Hero .ppp button {
+            padding: 0px 5px;
+            font-size: 13px;
+            margin: 10px 0;
+      }
+
+      .Hero .ppp .counts
+      {
+
+            width: 90%;
+            height: 60px;
+            margin-top: 25px;
+            box-shadow: 0px 6px 30px 0px #00000017;
+            z-index: 10;
+            background-color: #fff;
+      }
+
+      .Hero .ppp .counts p,
+      .Hero .ppp .counts span {
+            font-size: 12px;
+      }
+      .Hero .Content {
+            width: 90%;
+      }
+       .NavBar img:nth-child(1)
+      {
+            width: 80px !important;
+      }
+       .NavBar h2
+      {
+            /* font-size: 12px; */
+            display: none;
+      }
+       .NavBar img:nth-child(3)
+      {
+            width: 64px !important;
+      }
+}

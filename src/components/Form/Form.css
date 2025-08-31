@@ -1,0 +1,752 @@
+.Form {
+      width: 100%;
+      text-align: center;
+}
+.blue{
+      filter: blur(10px);
+}
+.Form .NavBar {
+      position: fixed;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 100px;
+      background-color: #ffffff;
+      padding-top: 30px;
+}
+
+.Form .NavBar h2 {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19.5px;
+      letter-spacing: 0.05em;
+      text-align: left;
+}
+
+.Form .Form-fq {
+      padding-top: 100px;
+}
+
+.Form .Form-fq form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+}
+
+.Form .Form-fq h2 {
+      font-family: Tajawal;
+      font-size: 28.39px;
+      font-weight: 700;
+      line-height: 24.85px;
+      color: #FF8500;
+}
+
+.Form .Form-fq .p {
+      width: 79%;
+      font-family: Tajawal;
+      font-size: 17.75px;
+      font-weight: 500;
+      line-height: 24.85px;
+      color: #282828;
+      margin: 40px auto;
+      direction: rtl;
+      text-align: start;
+}
+.Form .Form-fq .asddvv-sdfsdf-sdf-sdf {
+      width: 84%;
+      font-family: Tajawal;
+      font-size: 17.75px;
+      font-weight: 500;
+      line-height: 24.85px;
+      color: #282828;
+      margin: 40px auto;
+}
+
+.Form .Form-fq .p2 {
+      width: 79%;
+      font-family: Tajawal;
+      font-size: 17.75px;
+      font-weight: 500;
+      line-height: 24.85px;
+      color: #282828;
+      margin: 10px auto 40px auto;
+      direction: rtl;
+      text-align: start;
+}
+
+.Form .Form-fq form .input {
+      border: none;
+      border-bottom: 1px solid #282828;
+      margin: 10px 0;
+      width: 100%;
+      height: 29px;
+      font-family: Tajawal;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24.85px;
+      text-align: right;
+      color: #282828;
+}
+
+.Form .Form-fq form .input::placeholder {
+      font-family: Tajawal;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24.85px;
+      text-align: right;
+      color: #BBBBBB;
+}
+
+.Form .Form-fq form .input:focus {
+      outline: none;
+      background-color: #bbbbbb23;
+}
+
+#file-upload {
+      display: none;
+}
+
+.custom-file-label {
+      display: inline-block;
+      padding: 10px 20px;
+      font-family: Tajawal;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24.85px;
+      cursor: pointer;
+      color: #282828;
+      border-radius: 10px;
+}
+
+.custom-file-label img {
+      margin-bottom: -5px;
+      margin-right: 5px;
+}
+
+.custom-file-label:hover {
+      background-color: #2828281a;
+      color: #282828;
+}
+
+.Content-if-requer {
+      width: 80vw;
+      height: 60vh;
+      border-radius: 33px;
+      box-shadow: 1px 2px 30px 0px #00000017;
+      background-color: #fff;
+      margin: 20px auto;
+}
+
+.Content-if-requer .scroling {
+      width: 90%;
+      margin: 0 auto;
+      height: 85%;
+      border-bottom: 1px solid #282828;
+      overflow-y: scroll;
+      padding: 10px;
+}
+
+.Content-if-requer .scroling::-webkit-scrollbar {
+      width: 12px;
+      /* عرض الشريط */
+      height: 12px;
+      /* ارتفاع الشريط (لشريط التمرير الأفقي) */
+}
+
+/* تخصيص مسار الشريط */
+.Content-if-requer .scroling::-webkit-scrollbar-track {
+      background: #EEEEEE;
+      /* لون الخلفية لمسار الشريط */
+      border-radius: 10px;
+      /* جعل الحواف دائرية */
+}
+
+/* تخصيص المقبض (الجزء الذي يمكنك سحبه) */
+.Content-if-requer .scroling::-webkit-scrollbar-thumb {
+      background: #FF8500;
+      /* لون المقبض */
+      border-radius: 10px;
+      cursor: grabbing;
+      /* جعل الحواف دائرية */
+}
+
+/* تخصيص المقبض عند التمرير عليه */
+.Content-if-requer .scroling::-webkit-scrollbar-thumb:hover {
+      background: #282828;
+      /* لون المقبض عند التمرير عليه */
+}
+.Content-if-requer .scroling p
+{
+      text-align: right;
+      direction: rtl;
+      margin: 25px 20px;
+}
+
+.Content-if-requer .sm-foter
+{
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0px auto;
+}
+.Content-if-requer .sm-foter button
+{
+      width: 103px;
+      height: 37px;
+      border-radius: 10px;
+      font-family: Tajawal;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      border: none;
+      background-color: #FF8500;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+}
+.Content-if-requer .sm-foter button:hover {
+      background-color: #e77600;
+}
+
+.Content-if-requer .sm-foter button.button-disabled {
+      background-color: #ccc;
+      color: #888;
+      cursor: not-allowed;
+      transform: none !important;
+}
+
+.Content-if-requer .sm-foter button.button-disabled:hover {
+      background-color: #ccc;
+}
+
+.Content-if-requer .sm-foter p
+{
+      margin: 0;
+      font-family: Tajawal;
+      font-size: 17.75px;
+      font-weight: 500;
+      line-height: 24.85px;
+      text-align: right;
+      color: #282828;
+      width: 82%;
+}
+/* إخفاء مربع الاختيار الفعلي */
+.checkbox-container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    /* تخصيص مربع الاختيار */
+    .checkmark {
+      position: relative;
+      height: 27px;
+      width: 27px;
+      background-color: #fff;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid #282828;
+    }
+    
+    /* عند مرور الماوس */
+    .checkbox-container:hover input ~ .checkmark {
+      background-color: #fff;
+    }
+    
+    /* عند تحديد مربع الاختيار */
+    .checkbox-container input:checked ~ .checkmark {
+      background-color: #FF8500;
+    }
+    
+    /* لتخصيص العلامة داخل مربع الاختيار */
+    .checkmark::after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    /* عرض العلامة عند تحديد مربع الاختيار */
+    .checkbox-container input:checked ~ .checkmark::after {
+      display: block;
+    }
+    
+    /* نمط العلامة */
+    .checkbox-container .checkmark::after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    /* Success message overlay - to darken the background */
+    .success-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Success Message Styling */
+    .success-message {
+      width: 541px;
+      max-width: 90%;
+      height: auto;
+      min-height: 337px;
+      position: relative; /* Changed from fixed to relative since parent is fixed */
+      z-index: 1000;
+      transition: 0.4s;
+      background-color: #fff;
+      box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px 20px;
+      margin: 0; /* Reset any margins */
+    }
+
+    .success-message p {
+      font-family: 'Tajawal';
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      margin: 5px;
+      direction: rtl;
+    }
+
+    .success-message p:nth-child(4) {
+      font-family: 'Tajawal';
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    /* Dismiss button styling */
+    .dismiss-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #FF8500;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-family: 'Tajawal';
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .dismiss-button:hover {
+      background-color: #e77600;
+      transform: scale(1.05);
+    }
+
+    .dismiss-button:active {
+      transform: scale(0.95);
+    }
+
+    .tag {
+      display: inline-flex;
+      /* width: 300px; */
+      align-items: center;
+      background-color: #e0e0e0;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 3px;
+    }
+    
+    .tag span {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    
+    .selected-options {
+      margin-top: 10px;
+    }
+    
+    .selected-tag {
+      display: inline-flex;
+      align-items: center;
+      background-color: #e0e0e0;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 3px;
+    }
+    
+    .selected-tag span {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    
+    @media(max-width:1150px){
+      .Content-if-requer .sm-foter p
+      {
+            font-size: 16px;
+      }
+    }
+
+
+    @media(max-width:830px){
+      .Form .NavBar {
+            top: 30px;
+            padding: 0 40px;
+      }
+      .Form .Form-fq h2 {
+            font-size: 24px;
+      }
+      
+      .Form .Form-fq .p {
+            font-size: 16px;
+            padding: 0 10px;
+            text-align: center;
+      }
+      .Form .Form-fq .p2 {
+            text-align: center;
+      }
+      .Form .Form-fq form {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+      }
+      
+      /* Stack inputs vertically on small screens */
+      .inputs-row {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: none !important;
+        gap: 10px !important;
+      }
+      
+      /* Make each input container take 90% width */
+      .inputs-row .input-container {
+        width: 90% !important;
+        flex: none !important;
+        margin: 5px 0 !important;
+        display: block !important;
+      }
+      
+      /* Make select container match other inputs */
+      .inputs-row .select-container {
+        width: 90% !important;
+        max-width: none !important;
+        margin: 5px 0 15px 0 !important;
+      }
+      
+      /* Ensure inputs take full width of their container */
+      .Form .Form-fq form .input {
+        width: 100% !important;
+        margin: 8px 0 !important;
+      }
+      
+      .Form .Form-fq form .input::placeholder {
+            text-align: center;
+      }
+      
+      .custom-file-label
+      {
+            box-shadow: 3px 3px 5.2px 0px #0000001F;
+            margin: 10px 0;
+      }
+      .Content-if-requer
+      {
+            margin-bottom: 100px;
+            position: relative;
+      }
+      .Content-if-requer .scroling p
+      {
+            font-size: 14px;
+      }
+      .Content-if-requer .sm-foter p
+      {
+            font-size: 14px;
+      }
+      .Content-if-requer .sm-foter button
+      {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translate(-50%);
+      }
+
+}
+@media(max-width:670px){
+      .Content-if-requer
+      {
+            height: 65vh;     
+            width: 100vw;    
+            padding: 0 10px;   
+      }
+      .Content-if-requer .scroling
+      {
+            height: 75%;
+            margin-bottom: 20px;
+      }
+      /* Mobile adjustments for success message */
+      .success-message {
+        width: 90%;
+        min-height: 300px;
+        padding: 20px 15px;
+      }
+      
+      .success-message p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      
+      .dismiss-button {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-top: 15px;
+      }
+}
+
+@media(max-width:480px){
+      .Form .NavBar {
+            top: 0px;
+            padding: 15px 10px;
+            box-shadow: 0px 4px 29px 0px #0000002E;
+      }
+      .Form .NavBar img
+      {
+            width: 100px;
+      }
+      .Form .NavBar h2
+      {
+            font-size: 13px;
+      }
+      .Content-if-requer .scroling p
+      {
+            font-size: 12px;
+      }
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.form-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-row {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Desktop styles - All inputs in one row */
+.inputs-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.input-container {
+  flex: 1;
+  min-width: 0;
+  margin: 0 5px;
+}
+
+.form-status-message {
+  color: #f39c12;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(243, 156, 18, 0.1);
+  padding: 5px;
+  border-radius: 5px;
+  border-bottom: 1px solid #f39c12;
+}
+
+.select-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+}
+
+/* Image Upload Styling */
+.image-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 15px auto 10px auto;
+  max-width: 500px;
+}
+
+.image-upload-label {
+  font-family: Tajawal;
+  font-size: 18px;
+  font-weight: 500;
+  color: #282828;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.image-drop-area {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #bbbbbb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.image-drop-area:hover {
+  border-color: #FF8500;
+  background-color: rgba(255, 133, 0, 0.05);
+}
+
+.image-drop-area.drag-active {
+  border-color: #FF8500;
+  background-color: rgba(255, 133, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-placeholder svg {
+  color: #bbbbbb;
+  transition: color 0.3s ease;
+}
+
+.image-drop-area:hover .upload-placeholder svg {
+  color: #FF8500;
+}
+
+.upload-placeholder p {
+  font-family: Tajawal;
+  font-size: 14px;
+  margin: 0;
+  color: #888;
+}
+
+.image-preview-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-preview {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  color: #ff0000;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.remove-image-btn:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+@media(max-width:830px) {
+  .image-drop-area {
+    height: 180px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .image-upload-container {
+    margin: 10px auto 25px auto;
+    width: 90%;
+  }
+
+  .upload-placeholder svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .image-upload-label {
+    text-align: center;
+  }
+}
+
+@media(max-width:480px) {
+  .image-drop-area {
+    height: 150px;
+  }
+  
+  .image-upload-label {
+    font-size: 16px;
+  }
+}

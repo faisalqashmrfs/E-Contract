@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "yarn dev",
-    "predeploy": "npmgit add README.md run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
